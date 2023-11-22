@@ -20,7 +20,7 @@ export default function Home({ lists }) {
 }
 
 export async function getServerSideProps() {
-    const response = await fetch('https://fakestoreapi.com/products');
+    const response = await fetch('https://api.escuelajs.co/api/v1/products');
     const data = await response.json();
     return {
         props: {

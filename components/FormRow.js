@@ -44,7 +44,7 @@ export default function FormRow({ lists }) {
     <React.Fragment>
     {data.map((item, index) => (
       <Grid key={index} item xs={6} sm={6} md={3} className='card'>
-        <img style={{ height: '150px', width: '120px' }} src={item.image} alt="Not Available"/>
+        <img style={{ height: '150px', width: '120px' }} src={item.images[0]} alt="Not Available"/>
         <h4>{item.title}</h4>
         <h5>{item.price}</h5>
         <button onClick={() => handleAdd(item)} className="btn">
