@@ -30,7 +30,7 @@ function page() {
   return (
     <>
       <ResponsiveAppBar />
-      {UI && products.item?.map((item, index) => (
+      {UI && products.map((item, index) => (
         <Paper key={index}
           sx={{
             p: 2,
